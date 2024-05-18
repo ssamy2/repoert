@@ -24,9 +24,6 @@ reports_count = 0
 TOKEN = "6995736276:AAG9Mxc91zvU5CwNDyFXdy5yjeTL1hv97bY"
 owner_id = 6505049528
 bot = telebot.TeleBot(TOKEN)
-
-if not os.path.exists("data"):
-    os.makedirs("data")
 conn = sqlite3.connect("data/serial_keys.db")
 c = conn.cursor()
 c.execute('''CREATE TABLE IF NOT EXISTS keys (
