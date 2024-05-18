@@ -14,15 +14,12 @@ try:
 except ImportError as e:
     os.system('pip install pyTelegramBotAPI')  
     os.system('pip install instaloader')
-    os.system('pip install telebot')
-
-if not os.path.exists('accounts.txt'):
-    open('accounts.txt', 'a').close()
+    os.system('pip install telebot') 
 
 L = instaloader.Instaloader()
 reports_count = 0
-TOKEN = "6995736276:AAG9Mxc91zvU5CwNDyFXdy5yjeTL1hv97bY"
-owner_id = 6505049528
+TOKEN = "6723789460:AAGhCdTQweMr3cAj2eUNR1p0u_K29KrUZRY"
+owner_id = 6213708507
 bot = telebot.TeleBot(TOKEN)
 conn = sqlite3.connect("data/serial_keys.db")
 c = conn.cursor()
