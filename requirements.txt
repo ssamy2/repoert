@@ -1,1 +1,3 @@
-# حط مكاتبك
+telebot==4.18.1
+instaloader==4.11
+sqlite3==3.45.3
