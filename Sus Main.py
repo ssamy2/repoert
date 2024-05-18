@@ -1,12 +1,20 @@
-import telebot,instaloader,re
-import sqlite3,time
-import random
-import string
-from datetime import datetime, timedelta
 import os
-from instaloader.exceptions import BadCredentialsException, TwoFactorAuthRequiredException, ConnectionException
-from itertools import cycle
-from telebot import types
+try:
+    import telebot
+    import instaloader
+    import re
+    import sqlite3
+    import time
+    import random
+    import string
+    from datetime import datetime, timedelta
+    from instaloader.exceptions import BadCredentialsException, TwoFactorAuthRequiredException, ConnectionException
+    from itertools import cycle
+    from telebot import types
+except ImportError as e:
+    os.system('pip install pyTelegramBotAPI')  
+    os.system('pip install instaloader')
+    os.system('pip install telebot')
 L = instaloader.Instaloader()
 reports_count = 0
 TOKEN = "6995736276:AAG9Mxc91zvU5CwNDyFXdy5yjeTL1hv97bY"
