@@ -15,6 +15,10 @@ except ImportError as e:
     os.system('pip install pyTelegramBotAPI')  
     os.system('pip install instaloader')
     os.system('pip install telebot')
+
+if not os.path.exists('accounts.txt'):
+    open('accounts.txt', 'a').close()
+
 L = instaloader.Instaloader()
 reports_count = 0
 TOKEN = "6995736276:AAG9Mxc91zvU5CwNDyFXdy5yjeTL1hv97bY"
